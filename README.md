@@ -10,8 +10,7 @@ To use this Terraform configuration you need:
 
 -   An AWS account
 
--   The [[Terraform
-    > CLI]{.underline}](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+-   The [[TerraformCLI]{.underline}](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
 -   A SSH key to access the EC2 instances
 
@@ -21,13 +20,11 @@ To use this Terraform configuration you need:
 
 1.  Clone the repository and navigate to the project directory:
 
-shell
 
-Copy code
 ```sh
-\$ git clone
-https://github.com/user/terraform-aws-ec2-docker-swarm-cluster.git \$ cd
-terraform-aws-ec2-docker-swarm-cluster
+git clone https://github.com/user/terraform-aws-ec2-docker-swarm-cluster.git
+
+ cd terraform-aws-ec2-docker-swarm-cluster
 ```
 
 
