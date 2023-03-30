@@ -71,7 +71,7 @@ ssh -i keypair.pem ec2-user@\<public-ip-address-of-instance\>
 ```
 Replace \<public-ip-address-of-instance\> with the actual public IP
 address of the instance that you want to connect to. 
-# **Join the nodes to the Swarm**
+
 
 # Configure the master and worker nodes
 
