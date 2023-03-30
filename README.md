@@ -1,4 +1,4 @@
-# Docker-swarm-with-terraform-on-AWS
+
 # **Terraform AWS EC2 Docker Swarm Cluster**
 
 This is a Terraform configuration to create a Docker Swarm cluster in
