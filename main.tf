@@ -1,25 +1,10 @@
-
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = ">= 3.0"
-    }
-  }
-}
-
-# Configure the AWS Provider
-provider "aws" {
-  region = "ca-central-1"
-}
-
 # Create a VPC
 resource "aws_vpc" "my-vpc" {
   cidr_block = "10.0.0.0/16"
   enable_dns_support   = true
   enable_dns_hostnames = true
   tags = {
-    Name = "Demo VPC"
+    Name = var.vpc_name
   }
 }
 
@@ -39,7 +24,7 @@ resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.my-vpc.id
 
   tags = {
-    Name = "swarm IGW"
+    Name = var.internet_gateway
   }
 }
 
